@@ -1403,9 +1403,10 @@ curl -v -X POST \
 
 ## Multifactor Authentication Operations
 
-You can enroll, activate, and verify factors using the `/api/v1/authn/factors` endpoint.
+You can enroll, manage, and verify factors outside the authentication context with [`/api/v1/users/:uid/factors/`](factors.html#factor-verification-operations).
 
-> You can also enroll, manage, and verify factors outside the authentication context with [`/api/v1/users/:uid/factors/`](factors.html#factor-verification-operations).
+Within the context of an authentication workflow, a logon flow with a specific end user, enrolling, managing, and verifying factors can also be performed
+with the following endpoints.
 
 ### Enroll Factor
 {:.api .api-operation}

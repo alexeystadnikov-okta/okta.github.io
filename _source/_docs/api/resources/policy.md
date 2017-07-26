@@ -892,9 +892,10 @@ The following conditions may be applied to the rules associated with Okta Sign O
 ## Multifactor (MFA) Policy
 {: #OktaMFAPolicy }
 
-> The MFA Policy API is a {% api_lifecycle beta %} [release](/docs/api/getting_started/releases-at-okta.html).
+> The MFA Policy API is a {% api_lifecycle beta %} release.
 
 Multifactor (MFA) Policy controls which MFA methods are available for a user, as well as when a user may enroll in a particular factor.
+To configure app-level MFA settings, use the [Factors API](/docs/api/resources/factors.html).
 
 #### Policy Settings Example
 Note that policy settings are included only for those factors which have been enabled.

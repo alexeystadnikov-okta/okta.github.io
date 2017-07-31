@@ -1134,25 +1134,25 @@ curl -v -X POST \
     "logo": [
       {
         "name": "medium",
-        "href": "http://rain.okta1.com:1802/assets/img/logos/default.6770228fb0dab49a1695ef440a5279bb.png",
+        "href": "https://your-domain.okta.com/assets/img/logos/default.6770228fb0dab49a1695ef440a5279bb.png",
         "type": "image/png"
       }
     ],
     "appLinks": [
       {
         "name": "oidc_client_link",
-        "href": "http://rain.okta1.com:1802/home/oidc_client/0oa1hm4POxgJM6CPu0g4/alnivcK7lCqtQ1jOE0g3",
+        "href": "https://your-domain.okta.com/home/oidc_client/0oa1hm4POxgJM6CPu0g4/alnivcK7lCqtQ1jOE0g3",
         "type": "text/html"
       }
     ],
     "users": {
-      "href": "http://rain.okta1.com:1802/api/v1/apps/0oa1hm4POxgJM6CPu0g4/users"
+      "href": "https://your-domain.okta.com/api/v1/apps/0oa1hm4POxgJM6CPu0g4/users"
     },
     "deactivate": {
-      "href": "http://rain.okta1.com:1802/api/v1/apps/0oa1hm4POxgJM6CPu0g4/lifecycle/deactivate"
+      "href": "https://your-domain.okta.com/api/v1/apps/0oa1hm4POxgJM6CPu0g4/lifecycle/deactivate"
     },
     "groups": {
-      "href": "http://rain.okta1.com:1802/api/v1/apps/0oa1hm4POxgJM6CPu0g4/groups"
+      "href": "https://your-domain.okta.com/api/v1/apps/0oa1hm4POxgJM6CPu0g4/groups"
     }
   }
 }

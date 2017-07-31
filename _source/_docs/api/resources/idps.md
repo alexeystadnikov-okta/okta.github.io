@@ -3662,7 +3662,7 @@ curl -v -X GET \
       }
     },
     "idpUser": {
-        "href": "http://rain.okta1.com:1802/idps/0oa62b57p7c8PaGpU0h7/users/00ub0oNGTSWTBKOLGLNR",
+        "href": "https://your-domain.okta.com/idps/0oa62b57p7c8PaGpU0h7/users/00ub0oNGTSWTBKOLGLNR",
         "hints": {
           "allow": [
             "GET",
@@ -3734,7 +3734,7 @@ curl -v -X POST \
   "lastUpdated": "2017-03-30T02:19:51.000Z",
   "_links": {
     "self": {
-      "href": "http://rain.okta1.com:1802/api/v1/idps/0oa62b57p7c8PaGpU0h7/users/00ub0oNGTSWTBKOLGLNR",
+      "href": "https://your-domain.okta.com/api/v1/idps/0oa62b57p7c8PaGpU0h7/users/00ub0oNGTSWTBKOLGLNR",
       "hints": {
         "allow": [
           "GET",
@@ -3743,10 +3743,10 @@ curl -v -X POST \
       }
     },
     "idp": {
-      "href": "http://rain.okta1.com:1802/api/v1/idps/0oa62b57p7c8PaGpU0h7"
+      "href": "https://your-domain.okta.com/api/v1/idps/0oa62b57p7c8PaGpU0h7"
     },
     "user": {
-      "href": "http://rain.okta1.com:1802/api/v1/users/00ub0oNGTSWTBKOLGLNR"
+      "href": "https://your-domain.okta.com/api/v1/users/00ub0oNGTSWTBKOLGLNR"
     }
   }
 }

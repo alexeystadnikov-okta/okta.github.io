@@ -5,8 +5,8 @@ function check_sample_code_orgs() {
     
     local dir=$(pwd)
     local yourOrgUrls=$(grep -EoR "(http|https)://your-org.okta*" --include="*.md" $dir --exclude-dir={node_modules,scripts,tests,dist,_docs/platform-release-notes} | sort | uniq)
-    # local yourDomainUrls=$(grep -EoR "(http|https)://your-domain*" --include="*.md" $dir --exclude-dir={node_modules,scripts,tests,dist,_docs/platform-release-notes} | sort | uniq)
     local yourExampleUrls=$(grep -EoR "(http|https)://example.okta*" --include="*.md" $dir --exclude-dir={node_modules,scripts,tests,dist,_docs/platform-release-notes} | sort | uniq)
+    local rainUrls=$(grep -EoR "http://rain.okta1.com:1802*" --include="*.md" $dir --exclude-dir={node_modules,scripts,tests,dist,_docs/platform-release-notes} | sort | uniq)
     
     if [ "$yourOrgUrls" ];
     then
@@ -19,6 +19,13 @@ function check_sample_code_orgs() {
     then
         echo "$yourExampleUrls"
         echo "Files contain old URL reference -> https://example.okta{preview}.com"
+        return 1
+    fi
+
+    if [ "$rainUrls" ];
+    then
+        echo "$rainUrls"
+        echo "Files contain old URL reference -> http://rain.okta1.com:1802"
         return 1
     fi
 }

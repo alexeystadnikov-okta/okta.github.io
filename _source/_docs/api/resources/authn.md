@@ -1072,7 +1072,7 @@ curl -v -X POST \
          "_links":{
             "logo":{
                "name":"medium",
-               "href":"http://rain.okta1.com:1802/assets/img/logos/salesforce_logo.dbd7e0b4de118a1dae1c39d60a3c30e5.png",
+               "href":"https://your-domain.okta.com/assets/img/logos/salesforce_logo.dbd7e0b4de118a1dae1c39d60a3c30e5.png",
                "type":"image/png"
             }
          }
@@ -1279,7 +1279,7 @@ User is assigned to a **Sign-On Policy** or **App Sign-On Policy** that requires
          "_links":{
             "logo":{
                "name":"medium",
-               "href":"http://rain.okta1.com:1802/assets/img/logos/salesforce_logo.dbd7e0b4de118a1dae1c39d60a3c30e5.png",
+               "href":"https://your-domain.okta.com/assets/img/logos/salesforce_logo.dbd7e0b4de118a1dae1c39d60a3c30e5.png",
                "type":"image/png"
             }
          }

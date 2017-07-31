@@ -92,6 +92,7 @@ $(function () {
                             }
 
                             localStorage.setItem('okta_dev_domain',resp.org_domain);
+                            localStorage.setItem('okta_fields_email',resp.fields.email);
                             window.location.href = thank_you_url;
                         })
                         .fail(function(resp) {
@@ -235,5 +236,10 @@ $(function () {
     var generated_domain = localStorage.getItem('okta_dev_domain');
     if (generated_domain != null) {
         $('#domain_link').html('<p>Access your new developer account now by visiting <a href="https://' + generated_domain + '.oktapreview.com">' + generated_domain + '.oktapreview.com</a></p>');
+    }
+
+    var field_email = localStorage.getItem('okta_fields_email');
+    if (field_email != null) {
+        $('#email_address').text(field_email);
     }
 });
